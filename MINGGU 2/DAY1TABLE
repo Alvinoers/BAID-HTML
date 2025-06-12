@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Harian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e6f7ff;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JADWAL LATIHAN HTML DASAR BAID</h1>
+
+    <table>
+        <caption>Senin - Jumat, Sesi HTML Juni 2025</caption>
+        <thead>
+            <tr>
+                <th>Hari/tanggal</th>
+                <th>Materi</th>
+                <th>point belajar</th>
+                <th>Tugas</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2 Juni 2025</td>
+                <td>frame</td>
+                <td>iframe</td>
+                <td>Embed Google Maps di halaman</td>
+                <td>
+                    <input type="checkbox"  value="sudah"> Beres
+                    <br>
+                    <input type="checkbox"  value="belum"> Belom
+                </td>
+            </tr>
+            <tr>
+                <td>3 Juni 2025</td>
+                <td>Tag Semantik</td>
+                <td>header, nav, section, article</td>
+                <td>Tambahkan footer & sidebar di blog</td>
+                <td>
+                    <input type="checkbox"  value="sudah"> Beres
+                    <br>
+                    <input type="checkbox"  value="belum"> Belom
+                </td>
+            </tr>
+            <tr>
+                <td>4 Juni 2025</td>
+                <td>Tag Semantik Lanjutan</td>
+                <td>footer, aside, figure</td>
+                <td>Tambahkan footer & sidebar di blog</td>
+                <td>
+                    <input type="checkbox"  value="sudah"> Beres
+                    <br>
+                    <input type="checkbox"  value="belum"> Belom
+                </td>
+            </tr>
+            <tr>
+                <td>5 Juni 2025</td>
+                <td>Div dan Span</td>
+                <td>div, span</td>
+                <td>Kelompokkan elemen dengan div</td>
+                <td>
+                    <input type="checkbox"  value="sudah"> Beres
+                    <br>
+                    <input type="checkbox"  value="belum"> Belom
+                </td>
+            </tr>
+            <tr>
+                <td>6-8 Juni 2025</td>
+                <td colspan="5" style="text-align: center; background-color: #ffe0b2;">Libur idhul Adha</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" style="text-align: center; font-style: italic;">
+                    Jangan Lupa Stor Project di Github 
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Keterangan Fitur Tabel:</h2>
+    <ul>
+        <li><strong>colspan</strong>: Menggabungkan kolom (contoh: sel istirahat)</li>
+        <li><strong>rowspan</strong>: Menggabungkan baris (tidak ditampilkan di contoh)</li>
+        <li><strong>CSS styling</strong>: Warna, hover effect, border</li>
+        <li><strong>Struktur lengkap</strong>: thead, tbody, tfoot</li>
+    </ul>
+
+</body>
+</html>
