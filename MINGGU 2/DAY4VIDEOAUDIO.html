@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia HTML</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .media-container {
+            background: rgb(253, 252, 252);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 100px rgba(201, 7, 175, 0.1);
+            margin-bottom: 30px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .video-wrapper iframe,
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        audio {
+            width: 100%;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar memasukkan media player di html</h1>
+    
+    <!-- VIDEO HTML5 -->
+    <div class="media-container">
+        <h2>1. Video Biasa source dari folder</h2>
+        <div class="video-wrapper">
+            <video controls poster="pic/run.jpg">
+                <source src="vid/kopi.mp4" type="video/mp4">
+                <source src="vid/nat.webp" type="video/webp">
+                Browser Anda tidak mendukung tag video.
+            </video>
+        </div>
+        <p><strong>Atribut Penting:</strong></p>
+        <ul>
+            <li><code>controls</code>: Menampilkan kontrol play/pause</li>
+            <li><code>poster</code>: Gambar thumbnail sebelum play</li>
+            <li><code>autoplay</code>: Mulai otomatis (diblokir banyak browser)</li>
+            <li><code>loop</code>: Video akan berulang</li>
+        </ul>
+    </div>
+    
+    <!-- YOUTUBE EMBED -->
+    <div class="media-container">
+        <h2>2. Embed YouTube</h2>
+        <div class="video-wrapper">
+            <iframe 
+                src="https://youtu.be/41M3IQVUFhY?si=dWTI0E1Af_akF-hq" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p><strong>Parameter URL YouTube:</strong></p>
+        <ul>
+            <li><code>?rel=0</code>: Tidak tampilkan video terkait</li>
+            <li><code>&autoplay=1</code>: Auto play (mungkin diblokir)</li>
+            <li><code>&start=30</code>: Mulai dari detik ke-30</li>
+        </ul>
+    </div>
+    
+    <!-- AUDIO HTML5 -->
+    <div class="media-container">
+        <h2>3. Audio Player</h2>
+        <audio controls>
+            <source src="aud/audio.mp3" type="audio/mpeg">
+            <source src="musik.ogg" type="audio/ogg">
+            Browser Anda tidak mendukung tag audio.
+        </audio>
+        <p><strong>Format Audio yang Didukung:</strong></p>
+        <ul>
+            <li>MP3 (audio/mpeg)</li>
+            <li>WAV (audio/wav)</li>
+            <li>OGG (audio/ogg)</li>
+        </ul>
+    </div>
+</body>
+</html>

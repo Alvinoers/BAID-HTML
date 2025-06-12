@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Member</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            margin: 10px 0;
+        }
+        .radio-group label, .checkbox-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .required {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Form Peminjaman Alat</h1>
+        
+        <form action="/register" method="POST">
+            <!-- Data Pribadi -->
+            <div class="form-group">
+                <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Departemen <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tanggal_lahir">Tanggal pinjam</label>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal_lahir">Tanggal Kembali</label>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+            </div>
+            
+            <!-- Jenis Kelamin (Radio) -->
+            <div class="form-group">
+                <label>KEPENTINGAN <span class="required">*</span></label>
+                <div class="radio-group">
+                    <input type="radio" id="pria" name="jenis_kelamin" value="L" required>
+                    <label for="pria">PRIBADI</label>
+                    
+                    <input type="radio" id="wanita" name="jenis_kelamin" value="P">
+                    <label for="wanita">PEKERJAAN</label>
+                </div>
+            </div>
+            
+            <!-- Domisili (Dropdown) -->
+            <div class="form-group">
+                <label for="provinsi">BARANG DIPINJAM <span class="required">*</span></label>
+                <select id="provinsi" name="provinsi" required>
+                    <option value="">-- Pilih Barang --</option>
+                    <optgroup label="LEAN">
+                        <option value="JBT">Proyektor</option>
+                        <option value="JTT">stop kontak</option>
+                        <option value="JTM">Kabel HDMI</option>
+                        <option value="JTM">Flashdisk</option>
+                    </optgroup>
+                    <optgroup label="EXIM">
+                        <option value="SB">printer</option>
+                        <option value="SU">Kertas</option>
+                        <option value="JTM">Kabel HDMI</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            
+            <!-- Alamat (Textarea) -->
+            <div class="form-group">
+                <label for="alamat">Alamat Lengkap</label>
+                <textarea id="alamat" name="alamat" rows="4"></textarea>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+    </div>
+</body>
+</html>
