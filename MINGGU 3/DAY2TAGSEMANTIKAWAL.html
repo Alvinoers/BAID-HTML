@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Teknologi</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 3000px;
+            margin: 0 auto;
+            padding: 0 50px;
+        }
+        
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        /* Main Content */
+        main {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        /* Articles Section */
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        article {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        article:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+        
+        article h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        article p {
+            margin-bottom: 15px;
+        }
+        
+        .meta {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        /* Sidebar */
+        aside {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        aside h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .footer-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">BAID</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Artikel</a></li>
+                    <li><a href="#">Tentang</a></li>
+                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#">Keranjang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Main Content -->
+        <main>
+            <!-- Articles Section -->
+            <section>
+                <article>
+                    <h2>TAG SEMANTIK AWAL</h2>
+                    <div class="meta">Ditulis oleh: Ersa | 9 Juni 2025</div>
+                    <p>Tag Semantik header, nav, section, article</p>
+                    <p>&lt;header&gt; = Bagian kepala dokumen atau section berisi: Logo, Judul, Navigasi utama dalam website ini ada dibagian logo BAID dan nav yang isinya beranda, tentang dll</p>
+                    <P>&lt;nav&gt; = untuk navigasi utama, dan untuk file penting kal di website ini contohnya dibagian beranda, artikel,tentang kontak itu.</P>
+                    <p>&lt;section&gt; = biasanya memiliki heading sendiri, Pengelompokan konten tematik, implementasinya ada di pembungkus tag semantik awal dan akhir</p>
+                    <p?>&lt;article&gt; = Konten mandiri yang bisa dibagikan, seperti Postingan blog, berita, komentar. contohnya tulisan ini ada di dalam tag &lt;article&gt;</p>
+                    <p>dan satu lagi &lt;footer&gt; implementasinya ada di pembungkus copy right </p>
+                    <p>dalam blog ini terdapat 201 nomor</p>
+                </article>
+                
+                <article>
+                    <h2>TAG SEMANTIK AKHIR</h2>
+                    <div class="meta">Ditulis oleh: ERSA | 9 Juni 2025</div>
+                    <p>TAG SEMANTIK LANJUTAN merupakan tambahan dari tag semantik awal dengan tag footer, aside, figure</p>
+                    <p>tag ini akan kita pelajari di pertemuan berikutnya</p>
+                </article>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 BAID. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+                <a href="#">Kontak Kami</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
