@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Jelajahi Dunia</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        /* Layout */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        header {
+            grid-column: 1 / -1;
+            background-color: #3498db;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        /* Main Content */
+        main {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        article {
+            margin-bottom: 40px;
+        }
+        
+        article h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        /* Figure Styles */
+        figure {
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        figure img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        figure img:hover {
+            transform: scale(1.02);
+        }
+        
+        figcaption {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        
+        /* Aside (Sidebar) */
+        aside {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            align-self: start;
+        }
+        
+        aside h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .popular-posts {
+            margin: 20px 0;
+        }
+        
+        .popular-posts li {
+            margin-bottom: 15px;
+            list-style-type: none;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .popular-posts li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        
+        /* Footer */
+        footer {
+            grid-column: 1 / -1;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Main Content -->
+        <main>
+            <article>
+                <h2>Petualangan di Gua Jomblang</h2>
+                
+                <figure>
+                    <img src="pic/jomblang.webp" alt="Gua Jomblang">
+                    <figcaption>Dome Jomblang  - Foto oleh Ersa</figcaption>
+                </figure>
+                
+                <p>Akses menuju Goa Jomblang dapat ditempuh dari Kota Yogyakarta dengan perjalanan sekitar 1,5 hingga 2 jam menggunakan kendaraan pribadi atau sewaan. Setelah melewati akses masuk yang cukup menantang, pengunjung akan disambut dengan pemandangan dalam goa yang mempesona.</p>
+                
+                <figure>
+                    <img src="pic/karimun.jpg" alt="Karimunjawa">
+                    <figcaption>Karimunjawa - Hidden Bahari Heaven</figcaption>
+                </figure>
+                
+                <p>Karimunjawa, sebuah destinasi wisata di Jawa Tengah, menawarkan keindahan alam yang tak tertandingi. Dengan pantai berpasir putih yang menakjubkan, air laut yang jernih, serta kehidupan bawah laut yang mempesona, Karimunjawa adalah surga bagi para penggemar wisata alam dan pecinta pantai.</p>
+            </article>
+            
+            <article>
+                <h2>Gunung Bromo di Fajar</h2>
+                
+                <figure>
+                    <img src="pic/bromo.webp" alt="Gunung Bromo">
+                    <figcaption>Pemandangan Gunung Bromo saat fajar</figcaption>
+                </figure>
+                
+                <p>Bangun pukul 3 pagi untuk melihat matahari terbit di Bromo adalah pengalaman yang tak terlupakan...</p>
+            </article>
+        </main>
+        
+        <!-- Sidebar -->
+        <aside>
+            <h3>Tentang Penulis</h3>
+            <p>Hai saya Ersa, saya sedang belajar HTML dasar.</p>
+            
+            <h3>Postingan Populer</h3>
+            <ul class="popular-posts">
+                <li><a href="#">Belajar HTML dasar</a></li>
+                <li><a href="#">CSS HTML dasar</a></li>
+                <li><a href="#">kunjungi github kamu </a></li>
+            </ul>
+            
+            <h3>Galeri Terbaru</h3>
+            <figure>
+                <img src="pic/ga1.jpeg" alt="Galeri Travel">
+                <figcaption>Karimunjawa, jepara</figcaption>
+            </figure>
+        </aside>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Become A IT DEVELOPER. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
